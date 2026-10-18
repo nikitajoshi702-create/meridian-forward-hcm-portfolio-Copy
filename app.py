@@ -95,11 +95,32 @@ if section == "1. Business Alignment":
         )
 
     st.markdown("### From business need to decision")
-    a, b, c, d = st.columns(4)
-    a.metric("01", "Business need")
-    b.metric("02", "Capability gap")
-    c.metric("03", "Workforce decision")
-    d.metric("04", "Business outcome")
+   
+st.markdown("""
+<div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px;">
+  <div style="background:white; border:1px solid #dce5e9; border-radius:12px; padding:20px;">
+    <p style="color:#667780; margin:0;">01</p>
+    <h3 style="color:#15364f; margin:8px 0;">Business need</h3>
+    <p style="color:#23313c; margin:0;">Shorter product cycles and original design.</p>
+  </div>
+  <div style="background:white; border:1px solid #dce5e9; border-radius:12px; padding:20px;">
+    <p style="color:#667780; margin:0;">02</p>
+    <h3 style="color:#15364f; margin:8px 0;">Capability gap</h3>
+    <p style="color:#23313c; margin:0;">Skills, handoffs and decision authority.</p>
+  </div>
+  <div style="background:white; border:1px solid #dce5e9; border-radius:12px; padding:20px;">
+    <p style="color:#667780; margin:0;">03</p>
+    <h3 style="color:#15364f; margin:8px 0;">Workforce decision</h3>
+    <p style="color:#23313c; margin:0;">Allocate capacity and close specialist gaps.</p>
+  </div>
+  <div style="background:white; border:1px solid #dce5e9; border-radius:12px; padding:20px;">
+    <p style="color:#667780; margin:0;">04</p>
+    <h3 style="color:#15364f; margin:8px 0;">Business outcome</h3>
+    <p style="color:#23313c; margin:0;">Faster delivery with reliable existing services.</p>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
 
     st.markdown("### Who does what?")
     st.dataframe(
