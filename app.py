@@ -126,7 +126,7 @@ st.markdown("""
      
 
 # ---------- SECTION 2 ----------
-elif section == "2. Workforce Planning":
+if section == "2. Workforce Planning":
     st.header("02 | Work Design and Workforce Planning")
     st.write(
         "Four-week pilot | Proposed bounded delegation | "
