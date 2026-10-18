@@ -122,32 +122,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-    st.markdown("### Who does what?")
-    st.dataframe(
-        pd.DataFrame({
-            "Role": [
-                "Business leaders",
-                "SHRBP",
-                "Line managers",
-                "HR specialists"
-            ],
-            "Responsibility": [
-                "Set priorities and retain high-risk decisions",
-                "Align people strategy with business goals",
-                "Manage release of staff and service coverage",
-                "Support recruitment, learning and workforce evidence"
-            ]
-        }),
-        use_container_width=True,
-        hide_index=True
-    )
-
-    st.info(
-        "Recommendation: test selective decentralisation. "
-        "Delegate defined, low-risk decisions while retaining "
-        "authorised controls over pricing, customer consent and "
-        "major architecture exceptions."
-    )
+    
+     
 
 # ---------- SECTION 2 ----------
 elif section == "2. Workforce Planning":
