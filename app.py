@@ -8,27 +8,46 @@ st.set_page_config(
     layout="wide"
 )
 
+
 # ---------- DESIGN ----------
 st.markdown("""
 <style>
-.stApp {background-color: #f7f9fb;}
-h1, h2, h3 {color: #15364f;}
+.stApp {
+    background-color: #f7f9fb !important;
+    color: #23313c !important;
+}
+[data-testid="stAppViewContainer"] {
+    background-color: #f7f9fb !important;
+}
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stWidgetLabel"] p,
+label {
+    color: #23313c !important;
+}
+h1, h2, h3 {
+    color: #15364f !important;
+}
 div[data-testid="stMetric"] {
-    background: white;
+    background: white !important;
     border: 1px solid #dce5e9;
     padding: 16px;
     border-radius: 12px;
 }
 .red-note {
-    color: #c62828;
+    color: #c62828 !important;
     background: #fff0f0;
     border-left: 5px solid #c62828;
     padding: 12px;
     border-radius: 5px;
 }
-.small-note {color: #667780;}
+.small-note {
+    color: #667780 !important;
+}
 </style>
 """, unsafe_allow_html=True)
+
 
 # ---------- SIDEBAR ----------
 st.sidebar.title("Meridian Forward")
